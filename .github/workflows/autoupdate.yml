@@ -13,11 +13,7 @@ jobs:
       - name: git-checkout
         uses: actions/checkout@v3
 
-      - name: Install all dependencies
-        run: pip install mkdocs-material
-
       - name: Push
       	run: . deploy.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+	  REPO_KEY: ${{secrets.API_TOKEN_GITHUB}}
