@@ -1,0 +1,20 @@
+site_name: CMS EGamma POG
+site_url: https://cms-egamma.github.io/
+
+theme: readthedocs
+
+nav:
+    - Home: index.md
+    - Run2:
+      - JSONs: EgammaSFJSON.md
+      - Recommendations: Run2.md
+    - Run3:
+      - Person Power: Run3_ID.md
+    - Physics Results: PhysicsResults.md
+    - Tools (External links):
+      - Tag&Probe Tree Producer: https://github.com/cms-egamma/EgammaAnalysis-TnPTreeProducer
+      - Tag&Probe Package: https://github.com/cms-egamma/egm_tnp_analysis
+    - FAQs: FAQs.md
+theme:
+  name: material
+
