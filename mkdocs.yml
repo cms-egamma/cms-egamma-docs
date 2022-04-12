@@ -5,10 +5,10 @@ theme: readthedocs
 
 nav:
     - Home: index.md
-    - Run 2:
+    - Run2:
       - JSONs: EgammaSFJSON.md
       - Recommendations: Run2.md
-    - Run 3:
+    - Run3:
       - Person Power: Run3_ID.md
     - Physics Results: PhysicsResults.md
     - Tools (External links):
