@@ -12,7 +12,7 @@ ls
 git config --get remote.origin.url
 git config --local user.email "action@github.com"
 git config --local user.name "GitHub Action"
-#mkdocs gh-deploy --config-file ../cms-egamma-docs/mkdocs.yml --remote-branch master
+mkdocs gh-deploy --config-file ../cms-egamma-docs/mkdocs.yml --remote-branch master
 cd ./../
 rm -rf cms-egamma.github.io
 cd cms-egamma-docs
