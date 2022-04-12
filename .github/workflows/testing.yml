@@ -27,7 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pip install mkdocs-material;cd cms-egamma.github.io/;mkdocs gh-deploy --config-file ../mkdocs.yml --remote-branch master;cd ..
+        run: |
+          pip install mkdocs-material
+          mkdir webupdate;cd webupdate;git clone https://github.com/cms-egamma/cms-egamma.github.io.git;
+          cd cms-egamma.github.io/;mkdocs gh-deploy --config-file ./../../mkdocs.yml --remote-branch master;cd ../..
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
