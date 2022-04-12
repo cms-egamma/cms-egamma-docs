@@ -1,0 +1,3 @@
+[submodule "cms-egamma.github.io"]
+	path = cms-egamma.github.io
+	url = https://github.com/cms-egamma/cms-egamma.github.io.git
