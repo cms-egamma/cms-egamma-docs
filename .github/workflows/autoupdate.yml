@@ -16,14 +16,8 @@ jobs:
       - name: Install all dependencies
         run: pip install mkdocs-material
 
-      - name: Build
-        run: mkdocs build
-    
       - name: Push
-        uses: cms-egamma/cms-egamma.github.io@master
+      	run: . deploy.sh
         env:
-          REPO: self
-          BRANCH: ./ # The branch name where you want to push the assets
-          FOLDER: site # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
