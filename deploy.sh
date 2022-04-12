@@ -10,6 +10,8 @@ git clone https://github.com/cms-egamma/cms-egamma.github.io.git
 cd cms-egamma.github.io/
 ls
 git config --get remote.origin.url
+git config user.name
+git config user.email
 #mkdocs gh-deploy --config-file ../cms-egamma-docs/mkdocs.yml --remote-branch master
 cd ./../
 rm -rf cms-egamma.github.io
