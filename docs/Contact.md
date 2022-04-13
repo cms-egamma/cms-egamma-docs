@@ -1,0 +1,4 @@
+- [Join the team on Mattermost](https://mattermost.web.cern.ch/signup_user_complete/?id=g9ax3ohqfjfffki4p7mgqr3puy)
+- Email the team via cms-talk: <cmstalk+egm@dovecotmta.cern.ch>
+- Send direct email to convenors: <cms-phys-conveners-EGM@cern.ch>
+- [Hypernews archive](https://hypernews.cern.ch/HyperNews/CMS/get/egamma.html) 

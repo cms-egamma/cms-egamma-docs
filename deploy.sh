@@ -1,17 +1,14 @@
 cd ../
 pip install mkdocs-material
 rm -rf cms-egamma.github.io
-#git clone https://github.com/cms-egamma/cms-egamma.github.io.git
+git clone https://github.com/cms-egamma/cms-egamma.github.io.git
 
-git clone git@github.com:cms-egamma/cms-egamma.github.io.git
+#git clone git@github.com:cms-egamma/cms-egamma.github.io.git
 #git@github.com:cms-egamma/cms-egamma.github.io.git
 #git config user.name github-actions
 #git config user.email github-actions@github.com
 cd cms-egamma.github.io/
-git config --local user.email "action@github.com"
-git config --local user.name "GitHub Action"
 ls
-git config --get remote.origin.url
 mkdocs gh-deploy --config-file ../cms-egamma-docs/mkdocs.yml --remote-branch master
 cd ./../
 rm -rf cms-egamma.github.io

@@ -4,17 +4,17 @@ site_url: https://cms-egamma.github.io/
 theme: readthedocs
 
 nav:
-    - Home: index.md
+    - e/γ POG: index.md
     - Run2:
       - JSONs: EgammaSFJSON.md
       - Recommendations: Run2.md
     - Run3:
       - Person Power: Run3_ID.md
     - Physics Results: PhysicsResults.md
-    - Tools (External links):
-      - Tag&Probe Tree Producer: https://github.com/cms-egamma/EgammaAnalysis-TnPTreeProducer
-      - Tag&Probe Package: https://github.com/cms-egamma/egm_tnp_analysis
+    - Tools: Tools.md
     - FAQs: FAQs.md
+    - Attend POG Meetings: https://indico.cern.ch/category/1305/
+    - Contact us: Contact.md
 theme:
   name: material
-
+  logo: https://cms-docdb.cern.ch/cgi-bin/PublicDocDB/RetrieveFile?docid=3045&filename=CMSlogo_color_nolabel_1024_May2014.png&version=3

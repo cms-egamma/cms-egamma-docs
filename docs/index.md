@@ -1,5 +1,3 @@
-<img src="/files/EGamma.gif" alt="" width="100"/>
-
 ![Alt Text](/files/cmsanimation.gif)
 
 The charge of the E/gamma POG is to study, develop, characterize and validate the tools to identify and reconstruct electrons and photons using all the information available from the CMS detector, both for the offline analysis and for the online event selection (HLT).
