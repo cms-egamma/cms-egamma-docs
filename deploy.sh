@@ -1,3 +1,9 @@
+sed -i '1d' docs/index.md
+sed -i '1d' docs/index.md
+#sed -i "1s|^|$(date +%D) |" docs/index.md
+DateIs=$(date +"%d-%m-%Y")
+echo $DateIs
+sed -i "1s/^/Documentation last updated on $DateIs \n\n/" docs/index.md
 cd ../
 pip install mkdocs-material
 rm -rf cms-egamma.github.io
