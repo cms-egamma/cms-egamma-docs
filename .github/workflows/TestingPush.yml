@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
           destination-repository-name: 'cms-egamma.github.io'
           user-email: akapoor@cern.ch
           commit-message: deploying
-          target-branch: main
+          target-branch: master
