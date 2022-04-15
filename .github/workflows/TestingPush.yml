@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Add date
+        run: sed -i '1d' docs/index.md;sed -i '1d' docs/index.md;DateIs=$(date +"%d-%m-%Y");echo $DateIs;sed -i "1s/^/Documentation last updated on $DateIs \n\n/" docs/index.md
+      - name: install mkdocs; build;
+        run:  pip install mkdocs-material; mkdocs build
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@devel
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: site/
+          destination-github-username: 'cms-egamma'
+          destination-repository-name: 'cms-egamma.github.io'
+          user-email: akapoor@cern.ch
+          commit-message: deploying
+          target-branch: master
