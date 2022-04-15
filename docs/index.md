@@ -1,7 +1,7 @@
 Documentation last updated on 14-04-2022 
 
 <!---Start writing below this! Do not change the last updated date. It will change automatically while deployment-->
-<span style="color:red">*It is still "work in progress", please refer to <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/EgammaPOG">EGamma Twiki</a> for the moment.*</span>.
+<span style="color:red">*This website is still a "work in progress", please refer to <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/EgammaPOG">EGamma Twiki</a> for the moment.*</span>.
 
 ![Alt Text](/files/cmsanimation.gif)
 
